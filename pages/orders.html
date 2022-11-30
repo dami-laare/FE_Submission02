@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <title>Freddy's Artisanal Halloween Shop: Orders</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <nav class="side-nav">
+        <img src="../assets/freddys_logo.svg" class="logo" />
+        <div class="nav-options">
+          <a href="./dashboard.html">Dashboard</a>
+          <a href="#">Orders</a>
+          <button id="logout">Logout</button>
+        </div>
+      </nav>
+      <div class="container">
+        <section class="section-container row justify-between">
+          <h1 class="heading">Orders</h1>
+          <div class="flex row gap">
+            <img src="../assets/search.svg" alt="search icon" />
+            <form id="search" action="" method="post">
+              <input id="search-input" />
+            </form>
+          </div>
+        </section>
+        <section class="orders-container">
+          <table id="orders" class="orders-table">
+            <thead>
+              <th>Product Name</th>
+              <th>Date</th>
+              <th>Price</th>
+              <th>Status</th>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </section>
+        <div class="page-section flex row gap">
+          <span id="page">Page 1 of 20</span
+          ><img id="prev-button" src="../assets/next.png" /><img
+            id="next-button"
+            src="../assets/next.png"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/orders.js" defer></script>
+    <script src="../js/logout.js" defer></script>
+  </body>
+</html>

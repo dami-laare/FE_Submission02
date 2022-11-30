@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <title>Freddy's Artisanal Halloween Shop: Dashboard</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <nav class="side-nav">
+        <img src="../assets/freddys_logo.svg" class="logo" />
+        <div class="nav-options">
+          <a href="#">Dashboard</a>
+          <a href="./orders.html">Orders</a>
+          <button id="logout">Logout</button>
+        </div>
+      </nav>
+      <div class="container">
+        <section class="summary section-container">
+          <h1 class="heading">Dashboard</h1>
+          <div class="summary-container">
+            <div class="summary-item">
+              <span class="summary-heading">Today</span>
+              <div id="summary-today" class="summary"></div>
+            </div>
+            <div class="summary-item">
+              <span class="summary-heading">Last Week</span>
+              <div id="summary-last-week" class="summary"></div>
+            </div>
+            <div class="summary-item">
+              <span class="summary-heading">Last Month</span>
+              <div id="summary-last-month" class="summary"></div>
+            </div>
+          </div>
+        </section>
+        <section class="revenue section-container">
+          <div class="heading-container">
+            <h2 class="heading heading-revenue">Revenue (last 7 days)</h2>
+            <label class="switch">
+              <input id="switch" type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="chart-container"></div>
+          <!-- <div class="label-container"></div> -->
+        </section>
+        <section class="bestsellers section-container">
+          <h2 class="heading">Bestsellers</h2>
+          <table id="bestsellers" class="bestsellers-table">
+            <thead>
+              <th>Product Name</th>
+              <th>Price</th>
+              <th># Units Sold</th>
+              <th>Revenue</th>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </section>
+      </div>
+    </div>
+
+    <script src="../js/dashboard.js" defer></script>
+    <script src="../js/logout.js" defer></script>
+  </body>
+</html>
