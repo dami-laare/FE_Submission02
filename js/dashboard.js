@@ -250,3 +250,18 @@ getDashboardData().then(
     console.log({ sales_over_time_year, sales_over_time_week });
   }
 );
+const expandButton = document.getElementById("expand-button");
+expandButton.addEventListener("click", () => {
+  const sideNav = document.querySelector(".side-nav");
+  const isActive = sideNav.classList.contains("active");
+
+  if (isActive) {
+    sideNav.classList.remove("active");
+    expandButton.classList.add("closed");
+    expandButton.classList.remove("opened");
+  } else {
+    sideNav.classList.add("active");
+    expandButton.classList.add("opened");
+    expandButton.classList.remove("closed");
+  }
+});

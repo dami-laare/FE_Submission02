@@ -3,6 +3,7 @@
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   letter-spacing: 1.2px;
+  background-color: #d8d8d8;
 }
 
 body.login-container {
